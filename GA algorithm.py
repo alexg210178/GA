@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 np.random.seed(seed=0)
 
+#function of binary to decimal
 def bin_to_dec(X):
     x=0
     y=0
@@ -13,6 +14,8 @@ def bin_to_dec(X):
     x = 8+ x * 2 / (2**8-1)
     y = 10+ y* 3 / (2**8-1)
     return x,y
+
+#objective function
 def fun(X):
     
     x,y=bin_to_dec(X)
